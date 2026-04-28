@@ -248,6 +248,7 @@ pub enum Role {
     User,
     #[default]
     Assistant,
+    Tool,
 }
 
 /// Content of a message
