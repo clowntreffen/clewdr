@@ -230,6 +230,7 @@ fn merge_messages(msgs: Vec<Message>, system: String) -> Option<Merged> {
             }
             Role::User => format!("{h}: "),
             Role::Assistant => format!("{a}: "),
+            Role::Tool => format!("{h}: "),
         };
         write!(w, "{line_breaks}{prefix}{text}").ok()?;
     }
